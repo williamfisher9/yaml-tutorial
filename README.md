@@ -33,3 +33,56 @@ strval: |
   here and ends here
 ```
 
+### Null Value:
+Use the word null or ~ to represent a null value:
+```
+name: null
+email: ~
+```
+
+### Numeric Values:
+```
+scale: .inf
+scale: -.inf
+scale: .NAN
+scale: 10
+scale: 10.829
+```
+
+### Booleans
+Booleans accept True | False | On | Off
+
+### Arrays
+```
+items: [1, 2, 3, 4]
+
+# or
+
+items:
+  - 1
+  - 2
+  - 3
+  - 4
+
+# example: {'items': [{'things': {'thing1': 'x', 'thing2': 'y'}}, {'other things': {'other thing1': 'z'}}]}
+items:
+  - things:
+      thing1: x
+      thing2: y
+  - other things:
+      other thing1: z
+
+# example: {'items': [{'things': [{'thing1': 'x'}, {'thing2': 'y'}]}, {'other things': [{'other thing1': 'z'}]}]}
+items:
+  - things:
+      - thing1: x
+      - thing2: y
+  - other things:
+      - other thing1: z
+```
+
+### Dictinaries
+```
+things: {key1: value1, key2: value2}
+```
+
